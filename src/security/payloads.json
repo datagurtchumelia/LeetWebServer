@@ -1,0 +1,21 @@
+{
+    "xssPayloads": [
+        "<script>",
+        "<script",
+        "javascript:",
+        "onload=",
+        "alert(",
+        "<body",
+        "<svg"
+    ],
+    "sqlInjectionPayloads": [
+        "SELECT",
+        "DROP",
+        "'; --",
+        "1'; DROP TABLE users; --",
+        "1 OR 1=1; --",
+        "1 UNION SELECT null, username, password FROM users; --",
+        "'",
+        "admin')"
+    ]
+}
